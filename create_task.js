@@ -67,6 +67,7 @@ onEvent("begin3", "click", function( ) {
   points = points + 1;
   setText("pointspot3", points);
   lives = 2;
+  setText("livespot3", lives);
   setScreen("spot3");
 });
 onEvent("airplane2", "click", function( ) {
