@@ -1,4 +1,5 @@
 var lives = 2;
+var points = 0;
 
 function wrong() {
   setScreen("wrongscreen");
@@ -7,6 +8,8 @@ function wrong() {
   setText("livespot2", lives);
   setText("livespot3", lives);
   setText("livespot4", lives);
+  points = 0;
+  setText("pointspot1", lives);
   onEvent("startoverbutton(wrong)", "click", function( ) {
     setScreen("beg1");
   });
@@ -47,6 +50,8 @@ onEvent("spot1background", "click", function( ) {
 });
 
 onEvent("Begin2", "click", function( ) {
+  points = points + 1;
+  setText("pointspot2", points);
   lives = 2;
   setText("livespot2", lives);
   setScreen("spot2");
@@ -59,6 +64,8 @@ onEvent("spot2background", "click", function( ) {
 });
 
 onEvent("begin3", "click", function( ) {
+  points = points + 1;
+  setText("pointspot3", points);
   lives = 2;
   setScreen("spot3");
 });
@@ -70,6 +77,8 @@ onEvent("spot3background", "click", function( ) {
 });
 
 onEvent("begin4", "click", function( ) {
+  points = points + 1;
+  setText("pointspot4", points);
   lives = 2;
   setScreen("spot4");
 });
