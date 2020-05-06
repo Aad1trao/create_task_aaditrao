@@ -1,23 +1,6 @@
 var lives = 2;
 var points = 0;
 
-function wrong() {
-  setScreen("wrongscreen");
-  lives = 2;
-  setText("livespot1", lives);
-  setText("livespot2", lives);
-  setText("livespot3", lives);
-  setText("livespot4", lives);
-  points = 0;
-  setText("pointspot1", lives);
-  onEvent("startoverbutton(wrong)", "click", function( ) {
-    setScreen("beg1");
-  });
-  onEvent("gohomebutton(wrong)", "click", function( ) {
-    setScreen("HomeScreen");
-  });
-}
-
 function clickbg() {
   lives = lives - 1;
   setText("livespot1", lives);
@@ -25,7 +8,20 @@ function clickbg() {
   setText("livespot3", lives);
   setText("livespot4", lives);
   if (lives == 0) {
-    wrong();
+    setScreen("wrongscreen");
+    lives = 2;
+    setText("livespot1", lives);
+    setText("livespot2", lives);
+    setText("livespot3", lives);
+    setText("livespot4", lives);
+    points = 0;
+    setText("pointspot1", lives);
+    onEvent("startoverbutton(wrong)", "click", function( ) {
+      setScreen("beg1");
+    });
+    onEvent("gohomebutton(wrong)", "click", function( ) {
+      setScreen("HomeScreen");
+    });
   }
 }
 
