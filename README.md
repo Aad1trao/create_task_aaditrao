@@ -7,6 +7,6 @@ My create task is a game, a lot like Where's Waldo but with 4 levels. The levels
 - [x] Find an idea for create task
 - [x] Write the code
 - [x] Make sure it works all the way in all possiblities 
-- [ ] Make a peer go through my code
-- [ ] Answer to AP questions
+- [x] Make a peer go through my code
+- [x] Answer AP response questions
 - [ ] Turn it in
