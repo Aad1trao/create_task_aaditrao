@@ -15,7 +15,7 @@ function clickbg() {
     setText("livespot3", lives);
     setText("livespot4", lives);
     points = 0;
-    setText("pointspot1", lives);
+    setText("pointspot1", points);
     onEvent("startoverbutton(wrong)", "click", function( ) {
       setScreen("beg1");
     });
